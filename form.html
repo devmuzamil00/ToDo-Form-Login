@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+   
+    <div class="container">
+      <h1>Login Successfully</h1>
+      <form class="products">
+        <div>
+          <label for="productid">Product Id:</label><br>
+          <input type="number" name="productid" placeholder="Enter Product Id" id="productid" required>
+        </div>
+        <br>
+        <div>
+          <label for="productname">Product Name:</label><br>
+          <input type="text" name="productname" placeholder="Enter Product Name" id="productname" required >
+        </div>
+        <br>
+        <div>
+          <label for="quantity">Quantity:</label><br>
+          <input type="text" name="quantity" placeholder="Enter Product Quantity" id="quantity" required>
+        </div>
+        <br>
+        <div>
+          <label for="price">Product Price:</label><br>
+          <input type="text"  name="price" placeholder="Enter Product Price" id="price" required>
+        </div>
+        <br>
+        <div>
+          <input  id="submit-btn" class="submit" type="submit" value="Submit" >
+          <input id="edit-btn" class="submit" type="button" value="Edit" style="display:none;" />
+          <input  id="submit-btn" type="reset" value="Reset">
+        </div>
+        <!-- <div>
+          <button  type="button" onclick="addproduct()" id="add-btn">Add Product </button>
+          <button class="editBtn" onclick="Edit()">Update</button>
+          <button class="deletBtn" onclick="Delete()">Delete</button>
+        </div> -->
+      </form>
+    </div>
+    <div class="productTable">
+      <table class="list" id="myTable">
+        <thead>
+          <tr>
+            <th class="idth">Product Id</th>
+            <th class="nameth">Product Name</th>
+            <th class="quantth">Quantity</th>
+            <th class="priceth">Price</th>
+            <th class="actionth">Action</th>
+          </tr>
+        </thead>
+        <tbody  class="reg-list" id="table" >
+         
+        </tbody>
+      </table>
+    </div>
+    <!-- <script src="form.js"></script> -->
+<script src="form2.js"></script>
+  </body>
+</html>
